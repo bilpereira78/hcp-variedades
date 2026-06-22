@@ -25,17 +25,19 @@
 
     <header>
         <div class="perfil">
-            <img src="imagens/perfil.jpg" alt="Perfil HCP Variedades">
+            <!-- Substitua o src pelo caminho correto da sua logo quando subir ela no GitHub -->
+            <img src="imagens/logo.png" alt="Logo HCP Variedades" class="logo-site">
             <h1>HCP Variedades</h1>
             <p>Ofertas selecionadas todos os dias 🔥</p>
         </div>
 
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <!-- Insira os links das suas redes sociais substituindo o '#' dentro do href -->
+            <a href="#" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/5599992149532?text=Olá,%20vim%20através%20do%20HCP%20Variedades" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
 
         <div class="tema">
@@ -49,20 +51,22 @@
 
     <nav id="menu">
         <ul>
-            <li>Home</li>
-            <li>Moda</li>
-            <li>Beleza</li>
-            <li>Casa</li>
-            <li>Eletrônicos</li>
-            <li>Cupons</li>
-            <li>Ganhe Dinheiro</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#moda-feminina">Moda Feminina</a></li>
+            <li><a href="#moda-masculina">Moda Masculina</a></li>
+            <li><a href="#beleza">Beleza</a></li>
+            <li><a href="#casa">Casa e Cozinha</a></li>
+            <li><a href="#eletronicos">Eletrônicos</a></li>
+            <li><a href="#ferramentas">Ferramentas</a></li>
+            <li><a href="#cupons">Cupons</a></li>
+            <li><a href="#ofertas-desconto">Ofertas com Desconto</a></li>
         </ul>
     </nav>
 
     <section class="slider">
         <div class="slide ativo">
             <h2>🔥 OFERTAS IMPERDÍVEIS</h2>
-            <p>Shopee • Amazon • Temu • Shein</p>
+            <p>Shopee • Amazon • Temu • Shein • Casa e Cozinha</p>
         </div>
         <div class="slide">
             <h2>📱 ELETRÔNICOS MAIS VENDIDOS</h2>
@@ -82,12 +86,13 @@
         👁 Visitantes: <span>0</span>
     </div>
 
-    <section class="categoria">
+    <!-- SEÇÃO MODA FEMININA -->
+    <section class="categoria" id="moda-feminina">
         <h2>👗 Moda Feminina</h2>
         <div class="cards">
             <div class="card">
                 <div class="favorito"><i class="fa-solid fa-heart"></i></div>
-                <img loading="lazy" src="imagens/vestido1.jpg">
+                <img loading="lazy" src="imagens/vestido1.jpg" alt="Vestidos Elegantes">
                 <h3>Vestidos Elegantes</h3>
                 <div class="avaliacao">★★★★★</div>
                 <p>Confira as melhores ofertas.</p>
@@ -95,58 +100,276 @@
             </div>
             <div class="card">
                 <div class="favorito"><i class="fa-solid fa-heart"></i></div>
-                <img loading="lazy" src="imagens/vestido2.jpg">
+                <img loading="lazy" src="imagens/vestido2.jpg" alt="Conjuntos Femininos">
                 <h3>Conjuntos Femininos</h3>
                 <div class="avaliacao">★★★★★</div>
                 <p>Produtos selecionados.</p>
                 <a href="#">Comprar</a>
             </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_fem3.jpg" alt="Produto Feminino 3">
+                <h3>Produto Feminino 3</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_fem4.jpg" alt="Produto Feminino 4">
+                <h3>Produto Feminino 4</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_fem5.jpg" alt="Produto Feminino 5">
+                <h3>Produto Feminino 5</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
         </div>
     </section>
 
-    <section class="categoria">
+    <!-- SEÇÃO MODA MASCULINA -->
+    <section class="categoria" id="moda-masculina">
+        <h2>👕 Moda Masculina</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_masc1.jpg" alt="Produto Masculino 1">
+                <h3>Camisas Estilosas</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Confira as melhores ofertas.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_masc2.jpg" alt="Produto Masculino 2">
+                <h3>Calças e Bermudas</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Produtos selecionados.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_masc3.jpg" alt="Produto Masculino 3">
+                <h3>Produto Masculino 3</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_masc4.jpg" alt="Produto Masculino 4">
+                <h3>Produto Masculino 4</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/moda_masc5.jpg" alt="Produto Masculino 5">
+                <h3>Produto Masculino 5</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO BELEZA -->
+    <section class="categoria" id="beleza">
         <h2>💄 Beleza</h2>
         <div class="cards">
             <div class="card">
                 <div class="favorito"><i class="fa-solid fa-heart"></i></div>
-                <img loading="lazy" src="imagens/perfume.jpg">
+                <img loading="lazy" src="imagens/perfume.jpg" alt="Perfumes">
                 <h3>Perfumes</h3>
                 <div class="avaliacao">★★★★★</div>
                 <p>Mais vendidos.</p>
                 <a href="#">Comprar</a>
             </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/beleza2.jpg" alt="Produto Beleza 2">
+                <h3>Produto Beleza 2</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/beleza3.jpg" alt="Produto Beleza 3">
+                <h3>Produto Beleza 3</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/beleza4.jpg" alt="Produto Beleza 4">
+                <h3>Produto Beleza 4</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/beleza5.jpg" alt="Produto Beleza 5">
+                <h3>Produto Beleza 5</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
         </div>
     </section>
 
-    <section class="categoria">
+    <!-- SEÇÃO CASA E COZINHA -->
+    <section class="categoria" id="casa">
         <h2>🏠 Casa e Cozinha</h2>
         <div class="cards">
             <div class="card">
                 <div class="favorito"><i class="fa-solid fa-heart"></i></div>
-                <img loading="lazy" src="imagens/casa.jpg">
+                <img loading="lazy" src="imagens/casa.jpg" alt="Organizadores">
                 <h3>Organizadores</h3>
                 <div class="avaliacao">★★★★★</div>
                 <p>Praticidade para sua casa.</p>
                 <a href="#">Comprar</a>
             </div>
-        </div>
-    </section>
-
-    <section class="categoria">
-        <h2>📱 Eletrônicos</h2>
-        <div class="cards">
             <div class="card">
                 <div class="favorito"><i class="fa-solid fa-heart"></i></div>
-                <img loading="lazy" src="imagens/fone.jpg">
-                <h3>Fones Bluetooth</h3>
+                <img loading="lazy" src="imagens/casa2.jpg" alt="Produto Casa 2">
+                <h3>Produto Casa 2</h3>
                 <div class="avaliacao">★★★★★</div>
-                <p>Alta qualidade.</p>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/casa3.jpg" alt="Produto Casa 3">
+                <h3>Produto Casa 3</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/casa4.jpg" alt="Produto Casa 4">
+                <h3>Produto Casa 4</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/casa5.jpg" alt="Produto Casa 5">
+                <h3>Produto Casa 5</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
                 <a href="#">Comprar</a>
             </div>
         </div>
     </section>
 
-    <section class="categoria">
+    <!-- SEÇÃO ELETRÔNICOS -->
+    <section class="categoria" id="eletronicos">
+        <h2>📱 Eletrônicos</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/fone.jpg" alt="Fones Bluetooth">
+                <h3>Fones Bluetooth</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Alta qualidade.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/eletronico2.jpg" alt="Produto Eletrônico 2">
+                <h3>Produto Eletrônico 2</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/eletronico3.jpg" alt="Produto Eletrônico 3">
+                <h3>Produto Eletrônico 3</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/eletronico4.jpg" alt="Produto Eletrônico 4">
+                <h3>Produto Eletrônico 4</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/eletronico5.jpg" alt="Produto Eletrônico 5">
+                <h3>Produto Eletrônico 5</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FERRAMENTAS -->
+    <section class="categoria" id="ferramentas">
+        <h2>🔧 Ferramentas</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/ferramenta1.jpg" alt="Produto Ferramenta 1">
+                <h3>Produto Ferramenta 1</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/ferramenta2.jpg" alt="Produto Ferramenta 2">
+                <h3>Produto Ferramenta 2</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/ferramenta3.jpg" alt="Produto Ferramenta 3">
+                <h3>Produto Ferramenta 3</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/ferramenta4.jpg" alt="Produto Ferramenta 4">
+                <h3>Produto Ferramenta 4</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="card">
+                <div class="favorito"><i class="fa-solid fa-heart"></i></div>
+                <img loading="lazy" src="imagens/ferramenta5.jpg" alt="Produto Ferramenta 5">
+                <h3>Produto Ferramenta 5</h3>
+                <div class="avaliacao">★★★★★</div>
+                <p>Mais detalhes em breve.</p>
+                <a href="#">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CUPONS E PROMOÇÕES -->
+    <section class="categoria" id="cupons">
         <h2>🎁 Cupons e Promoções</h2>
         <div class="cards">
             <div class="card"><h3>Shopee</h3><a href="#">Ver ofertas</a></div>
@@ -158,17 +381,19 @@
         </div>
     </section>
 
-    <section class="categoria">
-        <h2>💰 Ganhe Dinheiro</h2>
+    <!-- SEÇÃO OFERTAS COM DESCONTO -->
+    <section class="categoria" id="ofertas-desconto">
+        <h2>💰 Ofertas com Desconto</h2>
         <div class="cards">
-            <div class="card"><h3>Afiliado Shopee</h3><a href="#">Saiba mais</a></div>
-            <div class="card"><h3>Afiliado Amazon</h3><a href="#">Saiba mais</a></div>
-            <div class="card"><h3>Afiliado Mercado Livre</h3><a href="#">Saiba mais</a></div>
-            <div class="card"><h3>Kwai Bônus</h3><a href="#">Saiba mais</a></div>
+            <div class="card"><h3>Shopee</h3><a href="#">Saiba mais</a></div>
+            <div class="card"><h3>Amazon</h3><a href="#">Saiba mais</a></div>
+            <div class="card"><h3>Mercado Livre</h3><a href="#">Saiba mais</a></div>
+            <div class="card"><h3>Kwai e TikTok Shop</h3><a href="#cupons">Saiba mais</a></div>
         </div>
     </section>
 
-    <a href="https://wa.me/5599999999999?text=Olá,%20vim%20através%20do%20HCP%20Variedades" class="whatsapp">
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5599992149532?text=Olá,%20vim%20através%20do%20HCP%20Variedades" class="whatsapp" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
@@ -180,5 +405,5 @@
 
     <script src="script.js"></script>
 </body>
-  </html>
-
+                    </html>
+        
