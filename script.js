@@ -93,4 +93,16 @@ document.querySelector("#contador span").innerHTML = visitas;
 window.onload = () => {
     document.body.style.opacity = "1";
 };
+// Função para abrir e fechar o menu no celular ao clicar nos 3 traços
+document.addEventListener("DOMContentLoaded", function() {
+    const botaoMenu = document.querySelector(".menu-mobile");
+    const menuNav = document.getElementById("menu");
+
+    if (botaoMenu && menuNav) {
+        botaoMenu.addEventListener("click", function() {
+            menuNav.classList.toggle("mostrar");
+        });
+    }
+});
+
       
