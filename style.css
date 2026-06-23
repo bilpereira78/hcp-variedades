@@ -1,6 +1,3 @@
-/* ==========================================
-   CONFIGURAÇÕES GERAIS & TEMA ESCURO/CLARO
-   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +7,7 @@
 }
 
 body {
-    background-color: #0b1a30; /* Fundo escuro padrão */
+    background-color: #0b1a30;
     color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
     padding-bottom: 60px;
@@ -21,9 +18,6 @@ body.light-mode {
     color: #1a1a1a;
 }
 
-/* ==========================================
-   HEADER & BANNER DO TOPO
-   ========================================== */
 header {
     text-align: center;
     padding: 20px 10px;
@@ -31,7 +25,7 @@ header {
 
 .banner-topo {
     width: 100%;
-    max-width: 450px; /* Limita o tamanho do banner conforme solicitado */
+    max-width: 450px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -48,16 +42,11 @@ header {
 .redes a {
     color: #ffffff;
     font-size: 24px;
-    transition: transform 0.2s, color 0.2s;
+    text-decoration: none;
 }
 
 body.light-mode .redes a {
     color: #1a1a1a;
-}
-
-.redes a:hover {
-    transform: scale(1.2);
-    color: #ff8c00;
 }
 
 .tema {
@@ -72,20 +61,32 @@ body.light-mode .redes a {
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-/* ==========================================
-   MENU DE NAVEGAÇÃO (CORES CORRIGIDAS)
-   ========================================== */
+/* CONFIGURAÇÃO DO MENU MOBILE COM 3 TRAÇOS */
+.menu-mobile {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #132743;
+}
+
+body.light-mode .menu-mobile {
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
 #menu {
+    display: none;
     background-color: #132743;
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-body.light-mode #menu {
-    background-color: #ffffff;
+#menu.mostrar {
+    display: block !important;
 }
 
 #menu ul {
@@ -96,45 +97,32 @@ body.light-mode #menu {
     gap: 12px;
 }
 
-/* Força todos os links a terem a mesma cor e tira o roxo/azul antigo */
 #menu ul li a {
-    color: #ffffff !important; 
+    color: #ffffff !important;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    transition: color 0.3s;
 }
 
 body.light-mode #menu ul li a {
     color: #1a1a1a !important;
 }
 
-/* Efeito de destaque ao passar o dedo ou mouse */
-#menu ul li a:hover, #menu ul li a:active {
+#menu ul li a:hover {
     color: #ff8c00 !important;
 }
 
-/* Sub-menu de Moda */
 .sub-menu {
     list-style: none;
-    padding-left: 20px;
-    margin-top: 8px;
+    padding: 5px 0;
     display: flex;
     flex-direction: column;
     gap: 6px;
+    background-color: #0b1a30;
+    border-radius: 8px;
 }
 
-.menu-mobile {
-    display: none; /* Pode ser ativado via JS se necessário */
-    text-align: center;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-/* ==========================================
-   BANNER EM MOVIMENTO (SLIDER)
-   ========================================== */
+/* CARROSSEL DE PROMOÇÕES BANNER */
 .slider {
     position: relative;
     max-width: 90%;
@@ -143,7 +131,6 @@ body.light-mode #menu ul li a {
     margin: 20px auto;
     overflow: hidden;
     border-radius: 25px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
 .slide {
@@ -169,20 +156,15 @@ body.light-mode #menu ul li a {
 }
 
 .slide h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 18px;
     color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 .slide p {
-    font-size: 14px;
+    font-size: 13px;
     color: #f0f0f0;
 }
 
-/* ==========================================
-   BARRA DE PESQUISA
-   ========================================== */
 .pesquisa {
     text-align: center;
     margin: 20px auto;
@@ -195,18 +177,12 @@ body.light-mode #menu ul li a {
     padding: 12px 20px;
     border-radius: 25px;
     border: 1px solid #132743;
-    background-color: #ffffff;
-    color: #1a1a1a;
-    font-size: 15px;
-    outline: none;
 }
 
-/* ==========================================
-   SEÇÕES DE PRODUTOS ESTÁTICAS EM GRADE
-   ========================================== */
+/* GRADE HARMONIZADA DE PRODUTOS */
 .categoria {
     padding: 20px 15px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -217,47 +193,42 @@ body.light-mode #menu ul li a {
     padding-left: 10px;
 }
 
-/* Layout estático lado a lado como na imagem */
 .cards {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 15px;
-    overflow-x: visible; 
+    flex-wrap: wrap;
+    justify-content: space-between; /* Mantém o alinhamento perfeito */
+    gap: 12px;
 }
 
-/* Configuração de cada cartão de produto */
+/* No Mobile: Exibe exatamente 2 produtos por linha com margens idênticas */
 .card {
     background-color: #132743;
     border-radius: 15px;
-    padding: 15px;
-    flex: 1 1 calc(45% - 10px); /* Exibe 2 por linha no mobile de forma estática */
-    max-width: 180px;
+    padding: 12px;
+    width: calc(50% - 6px); /* Perfeito para 2 por linha no celular */
+    max-width: 240px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
 
 body.light-mode .card {
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .card img {
     width: 100%;
-    height: auto;
     max-height: 120px;
     object-fit: contain;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 .card h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 13px;
+    margin: 8px 0 4px 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -265,21 +236,19 @@ body.light-mode .card {
 
 .card .avaliacao {
     color: #ffbc00;
-    font-size: 12px;
-    margin-bottom: 5px;
+    font-size: 11px;
+    margin-bottom: 4px;
 }
 
 .card p {
-    font-size: 12px;
+    font-size: 11px;
     color: #bdbdbd;
-    margin-bottom: 10px;
 }
 
 body.light-mode .card p {
     color: #666666;
 }
 
-/* Botão comprar com a cor idêntica às ofertas */
 .card a {
     display: block;
     background-color: #ff8c00;
@@ -287,23 +256,16 @@ body.light-mode .card p {
     text-decoration: none;
     padding: 8px 10px;
     border-radius: 10px;
-    font-size: 14px;
     font-weight: bold;
-    transition: background-color 0.2s;
+    font-size: 13px;
+    margin-top: 8px;
 }
 
-.card a:hover {
-    background-color: #e06c00;
-}
-
-/* REMOÇÃO COMPLETA DOS CORAÇÕES BRANCOS */
+/* ELIMINAÇÃO COMPLETA DOS CORAÇÕES BRANCOS */
 .favorito, .fa-heart, .card-favorito {
     display: none !important;
 }
 
-/* ==========================================
-   BOTÕES FLUTUANTES & FOOTER
-   ========================================== */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -317,9 +279,8 @@ body.light-mode .card p {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    z-index: 1000;
     text-decoration: none;
+    z-index: 1000;
 }
 
 #topo {
@@ -332,10 +293,6 @@ body.light-mode .card p {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     z-index: 1000;
 }
 
@@ -344,127 +301,23 @@ footer {
     padding: 20px;
     background-color: #132743;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 body.light-mode footer {
     background-color: #ffffff;
-    }
-/* ==========================================
-   MENU DE NAVEGAÇÃO REFORMULADO (MOBILE/PC)
-   ========================================== */
-.menu-mobile {
-    display: block; /* Exibe os 3 traços no celular */
-    text-align: center;
-    font-size: 28px;
-    color: #ffffff;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #132743;
 }
 
-body.light-mode .menu-mobile {
-    color: #1a1a1a;
-    background-color: #ffffff;
-}
-
-#menu {
-    display: none; /* Deixa o menu escondido por padrão no celular */
-    background-color: #132743;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-/* Classe que o JavaScript vai usar para abrir o menu no celular */
-#menu.mostrar {
-    display: block !important;
-}
-
-#menu ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-#menu ul li {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-#menu ul li a {
-    color: #ffffff !important; 
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    display: block;
-    padding: 8px 0;
-    transition: color 0.3s;
-}
-
-body.light-mode #menu ul li a {
-    color: #1a1a1a !important;
-}
-
-#menu ul li a:hover, #menu ul li a:active {
-    color: #ff8c00 !important;
-}
-
-/* Sub-menu de Moda */
-.sub-menu {
-    list-style: none;
-    padding: 5px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    background-color: #0b1a30;
-    border-radius: 8px;
-    margin: 5px 10px;
-}
-
-/* ==========================================
-   CONFIGURAÇÃO PARA TELA DO PC (MODO HORIZONTAL)
-   ========================================== */
+/* No Computador/PC: Alinha perfeitamente 4 produtos por linha */
 @media (min-width: 769px) {
-    .menu-mobile {
-        display: none !important; /* Esconde os 3 traços no PC */
-    }
-
-    #menu {
-        display: block !important; /* Força o menu a ficar sempre visível no PC */
-        padding: 15px 0;
-    }
-
-    #menu ul {
-        flex-direction: row; /* Alinha os nomes na horizontal no PC */
-        justify-content: center;
-        gap: 25px;
-    }
-
-    #menu ul li {
-        width: auto;
-    }
-
-    /* Faz o sub-menu de moda flutuar bonitinho no PC ao passar o mouse */
-    .sub-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #132743;
-        min-width: 160px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        margin: 0;
-        padding: 10px;
-        z-index: 100;
-    }
-
-    #menu ul li:hover .sub-menu {
-        display: flex;
-    }
-   }
-   
+    .menu-mobile { display: none !important; }
+    #menu { display: block !important; }
+    #menu ul { flex-direction: row; justify-content: center; gap: 25px; }
+    #menu ul li { width: auto; }
+    .sub-menu { display: none; position: absolute; background-color: #132743; min-width: 160px; }
+    #menu ul li:hover .sub-menu { display: flex; }
     
+    .card {
+        width: calc(25% - 9px); /* Força exatamente 4 produtos por linha */
+    }
+}
