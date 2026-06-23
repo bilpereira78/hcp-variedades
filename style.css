@@ -350,4 +350,121 @@ footer {
 body.light-mode footer {
     background-color: #ffffff;
     }
+/* ==========================================
+   MENU DE NAVEGAÇÃO REFORMULADO (MOBILE/PC)
+   ========================================== */
+.menu-mobile {
+    display: block; /* Exibe os 3 traços no celular */
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #132743;
+}
+
+body.light-mode .menu-mobile {
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+#menu {
+    display: none; /* Deixa o menu escondido por padrão no celular */
+    background-color: #132743;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Classe que o JavaScript vai usar para abrir o menu no celular */
+#menu.mostrar {
+    display: block !important;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#menu ul li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#menu ul li a {
+    color: #ffffff !important; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+    transition: color 0.3s;
+}
+
+body.light-mode #menu ul li a {
+    color: #1a1a1a !important;
+}
+
+#menu ul li a:hover, #menu ul li a:active {
+    color: #ff8c00 !important;
+}
+
+/* Sub-menu de Moda */
+.sub-menu {
+    list-style: none;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: #0b1a30;
+    border-radius: 8px;
+    margin: 5px 10px;
+}
+
+/* ==========================================
+   CONFIGURAÇÃO PARA TELA DO PC (MODO HORIZONTAL)
+   ========================================== */
+@media (min-width: 769px) {
+    .menu-mobile {
+        display: none !important; /* Esconde os 3 traços no PC */
+    }
+
+    #menu {
+        display: block !important; /* Força o menu a ficar sempre visível no PC */
+        padding: 15px 0;
+    }
+
+    #menu ul {
+        flex-direction: row; /* Alinha os nomes na horizontal no PC */
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #menu ul li {
+        width: auto;
+    }
+
+    /* Faz o sub-menu de moda flutuar bonitinho no PC ao passar o mouse */
+    .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #132743;
+        min-width: 160px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        margin: 0;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    #menu ul li:hover .sub-menu {
+        display: flex;
+    }
+   }
+   
     
